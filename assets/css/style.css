@@ -1,5 +1,7 @@
 * {
   padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
 }
 .navbar {
@@ -17,7 +19,8 @@
   color: black;
   overflow: hidden;
   text-decoration: none;
-  font-weight: bolder;
+  letter-spacing: 3px;
+  /* font-weight: bolder; */
   padding: 10px;
 }
 .nav {
@@ -34,6 +37,30 @@
 .right-nav {
   display: flex;
   gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.right-nav img {
+  width: 20px;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.wishlist {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.bag {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
 }
 .container {
   display: flex;
@@ -42,10 +69,13 @@
 .contain1 {
   border: 1px solid silver;
   padding: 20px;
-  width: auto;
 }
 .h4 {
   margin: 10px;
+}
+h3 {
+  letter-spacing: 2px;
+  font-weight: unset;
 }
 .cat-input input {
   margin: 10px;
@@ -61,7 +91,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 85%;
+  width: 100%;
+  gap: 40px;
+  padding: 30px;
+  margin-top: 10px;
 }
 .line3 {
   display: flex;
@@ -71,9 +104,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 5px;
   align-items: center;
-
-  margin: 20px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+#card1:hover {
+  border: 1px solid silver;
+  border-radius: 5px;
 }
 
 .grey {
@@ -85,10 +123,11 @@
   text-decoration: line-through;
 }
 .red {
-  color: rgb(157, 79, 79);
+  color: #ff905a;
 }
 .img img {
-  height: 200px;
+  height: 300px;
+  border-radius: 5px;
 }
 @media only screen and (max-width: 440px) {
   .contain2 {
