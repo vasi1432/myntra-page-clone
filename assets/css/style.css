@@ -17,6 +17,7 @@
   color: black;
   overflow: hidden;
   text-decoration: none;
+  font-weight: bolder;
   padding: 10px;
 }
 .nav {
@@ -30,6 +31,10 @@
   border-radius: 5px;
   border: none;
 }
+.right-nav {
+  display: flex;
+  gap: 12px;
+}
 .container {
   display: flex;
   width: 100%;
@@ -37,7 +42,7 @@
 .contain1 {
   border: 1px solid silver;
   padding: 20px;
-  width: 15%;
+  width: auto;
 }
 .h4 {
   margin: 10px;
